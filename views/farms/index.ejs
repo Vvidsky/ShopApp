@@ -1,0 +1,20 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Home</title>
+</head>
+
+<body>
+    <h1>All Farms</h1>
+    <% for (let farm of farms) { %>
+        <li>
+            <%= farm.name %> - <strong><%= farm.city %>g</strong>
+            <a href="/farms/<%= farm._id %>">Info</a>
+        </li>
+    <% } %>    
+</body>
+
+</html>
